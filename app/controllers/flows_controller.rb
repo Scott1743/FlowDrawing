@@ -10,7 +10,7 @@ class FlowsController < ApplicationController
     code = params[:code]
     begin
       Flow.eval_workflow code
-      g = Workflow::Draw::workflow_diagram(Flow)
+      g = Workflow::Draw::workflow_diagram(Flow, font: "wqy-zenhei")
     rescue
       return render text: "sytax error ..."
     end

@@ -22,7 +22,7 @@ __Ubuntu:__
 sudo apt-get install graphviz
 ```
 
-In FlowDrawing root path:
+__In FlowDrawing root path:__
 
 ```
 bundle install
@@ -30,5 +30,5 @@ bundle install
 unicorn
 ```
 
-打开浏览器，在localhost:8080使用
+Open localhost:8080 in your browser. Have Fun :)
 
