@@ -1,3 +1,4 @@
+#encoding utf-8
 require "workflow/draw"
 
 class FlowsController < ApplicationController
@@ -11,7 +12,7 @@ class FlowsController < ApplicationController
       Flow.eval_workflow code
       g = Workflow::Draw::workflow_diagram(Flow)
     rescue
-      respond_to text: "语法错误"
+      return render text: "sytax error ..."
     end
     send_file "./flows_workflow.png"
   end
