@@ -1,14 +1,14 @@
 # FlowDrawing
 
-Use [Wolkflow](https://github.com/geekq/workflow "Wolkflow") to draw flow chart directly.
+Use [Wolkflow](https://github.com/geekq/workflow "Wolkflow") to draw flow-chart directly.
 
 ## Usage
 
 ```
-  git clone
+  git clone https://github.com/Scott1743/FlowDrawing.git
 ```
 
-To install GraphViz
+__To install GraphViz__
 
 __MAC OS:__
 
@@ -30,5 +30,5 @@ bundle install
 unicorn
 ```
 
-Open localhost:8080 in your browser. Have Fun :)
+Open 'localhost:8080' in your browser. Have Fun :)
 
