@@ -1,0 +1,28 @@
+h1 FlowDrawing
+hr
+h4 Example:
+p style="white-space: pre-wrap; border: 1px solid #333"
+  | state :new do
+      event :submit, :transitions_to => :awaiting_review
+    end
+    state :awaiting_review do
+      event :review, :transitions_to => :being_reviewed
+    end
+    state :being_reviewed do
+      event :accept, :transitions_to => :accepted
+      event :reject, :transitions_to => :rejected
+    end
+    state :accepted
+    state :rejected
+    &nbsp
+br
+p
+  b copy and try it :)
+hr
+= form_tag flows_path, method: :post do
+  p
+    b your workflow code here：
+  = text_area_tag "code", nil, rows: 20, style: "width: 100%"
+  .actions
+    = submit_tag "draw"
+
