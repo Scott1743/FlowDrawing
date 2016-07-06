@@ -31,6 +31,8 @@ gem 'slim-rails'
 gem 'ruby-graphviz'
 gem 'workflow'
 
+gem 'exception_notification'
+
 # Use Capistrano for deployment
 gem 'capistrano'
 gem 'capistrano-rails', group: :development
